@@ -1,729 +1,111 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="UTF-8">
-    <!--<title> Responsive Sidebar Menu  | CodingLab </title>-->
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
-  
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-	
-    <!-- Boxicons CDN Link -->
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CHENNAI</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+<meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="./style.css">
 
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
-	
-    <!-- Boxicons CDN Link -->
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+<style>
+  body {
+  background: #232321;
+}
 
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+h1 {
+  color: #fff;
+  padding: 10px 0;
+}
 
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-		
-        <meta name="description" content="Slicebox - 3D Image Slider with Fallback" />
-        <meta name="keywords" content="jquery, css3, 3d, webkit, fallback, slider, css3, 3d transforms, slices, rotate, box, automatic" />
-		<meta name="author" content="Pedro Botelho for Codrops" />
-        <script type="text/javascript" src="modernizr.custom.46884.js"></script>
-   </head>
-
-  
-  <div class="sidebar"  style="display: none;" >
-    <div class="logo-details">
-      <i class='bx bxs-moon icon'></i>
-        <div class="logo_name"><span style="color:blue">Edu</span>Moon</div>
-        
-    </div>
-    <ul class="nav-list">
-      <li>
-        <a href="#">
-          <i class='bx bxs-home'></i>
-          <span class="links_name">Home</span>
-        </a>
-         <span class="tooltip">Home</span>
-      </li>
-      <li>
-       <a href="#">
-         <i class='bx bxs-bookmark' ></i>
-         <span class="links_name">Courses</span>
-       </a>
-       <span class="tooltip">Courses</span>
-     </li>
-     <li>
-       <a href="#">
-         <i class='bx bxs-cloud-download' ></i>
-         <span class="links_name">Resources</span>
-       </a>
-       <span class="tooltip">Resources</span>
-     </li>
-     <li>
-       <a href="#">
-         <i class='bx bx-pie-chart-alt-2' ></i>
-         <span class="links_name">Blog</span>
-       </a>
-       <span class="tooltip">BLOG</span>
-     </li>
-     <li>
-       <a href="#">
-         <i class='bx bxs-calendar-event' ></i>
-         <span class="links_name">Events</span>
-       </a>
-       <span class="tooltip">Events</span>
-     </li>
-     <li>
-       <a href="#">
-         <i class='bx bxs-camera' ></i>
-         <span class="links_name">Gallery</span>
-       </a>
-       <span class="tooltip">Gallery</span>
-     </li>
-     <li>
-       <a href="#">
-         <i class='bx bxs-info-circle' ></i>
-         <span class="links_name">About</span>
-       </a>
-       <span class="tooltip">About</span>
-     </li>
-     <li>
-       <a href="#">
-         <i class='bx bxs-user' ></i>
-         <span class="links_name">Campus Ambassador</span>
-       </a>
-       <span class="tooltip">Campus Ambassador</span>
-     </li>
-     <li>
-        <a href="#">
-          <i class='bx bxs-log-in' ></i>
-          <span class="links_name">Login</span>
-        </a>
-        <span class="tooltip">Login</span>
-      </li>
-     <li class="profile">
-         <div class="profile-details">
-           
-           <div class="name_job">
-             <div class="name">User Name</div>
-             <div class="job"></div>
-           </div>
-         </div>
-         <i class='bx bx-log-out' id="log_out" ></i>
-     </li>
-    </ul>
-  </div>
-  <!--content starts-->
-
-  <!--header-->
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border: none;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+}
+.card a {
+  color: initial;
+}
+.card a:hover {
+  text-decoration: initial;
+}
+.card .text-muted i {
+  margin: 0 10px;
+}
 
 
-
-  <header class="header">
-    <!-- Top Bar -->
-    <div class="top_bar">
-        <div class="top_bar_container">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <div style="position: fixed;" class="top_bar_content d-flex flex-row align-items-center justify-content-start">
-                            <ul class="top_bar_contact_list">
-                                <li><div class="question">Have any questions?</div></li>
-                                <li>
-                                    <i class="fa fa-phone" aria-hidden="true"></i>
-                                    <div>+91-8555899332</div>
-                                </li>
-                                <li>
-                                    <i class="bx bx-envelope" aria-hidden="true"></i>
-                                    <div>edumoonhelpdesk@gmail.com</div>
-                                     
-                                </li>
-                            </ul>
-                           
-                        </div>
-                        <a style="float: right; background-color: aliceblue;";href="lms/">Register or Login</a>
-                    </div>
-                    
-                </div>
-                
-            </div>
-          
-        </div>				
-    </div>
-
-    <div style=" text-decoration: none;" class="header_container">
-        <div style=" text-decoration: none;" class="container">
-          <div style=" text-decoration: none;" class="row">
-            <div style=" text-decoration: none;"  class="col">
-              <div style=" text-decoration: none;" 
-                class="
-                  header_content
-                  d-flex
-                  flex-row
-                  align-items-center
-                  justify-content-start
-                "
-              >
-                <div style=" text-decoration: none;" class="logo_container">
-                  <a style=" text-decoration: none;"  href="#">
-                    <div  style=" text-decoration: none;" class="logo_text">Edu<span>Moon</span></div>
-                  </a>
-                </div>
-                <nav  style=" text-decoration: none;" class="main_nav_container ml-auto">
-                  <ul style=" text-decoration: none;" class="main_nav">
-                    <li style=" text-decoration: none;" ><a href="index.php">Home</a></li>
-                    <li><a href="lms/video%20tutorials/java/display_video_courses.php">Courses</a></li>
-                    <li><a href="lms/">Resources</a></li>
-                    <li><a href="blog.php">Blog</a></li>
-                    <li><a href="index.html">Events</a></li>
-                     <li><a href="gallery.php">Gallery</a></li>
-                    <li><a href="about.php">About</a></li>
-                    <li><a href="campus-ambassador.php">Campus Ambassador</a></li>
-                    <div class="shopping_cart">
-                      <a href="lms/login/logout.php"><i class="bx bx-log-out" aria-hidden="true"></i></a>
-                    </div>
-                  </ul>
-                  <!-- <div class="search_button">
-                    <i class="fa fa-search" aria-hidden="true"></i>
-                  </div> -->
-                  
-                  <i class='bx bx-menu' style="float: right;margin-top: 4px;" id="btn"   ></i>
-
-                  <div class="hamburger menu_mm">
-                    <i class="fa fa-bars menu_mm" aria-hidden="true"></i>
-                  </div>
-                </nav>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Header Search Panel -->
-      <div class="header_search_container">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <div
-                class="
-                  header_search_content
-                  d-flex
-                  flex-row
-                  align-items-center
-                  justify-content-end
-                "
-              >
-                <form action="#" class="header_search_form">
-                  <input
-                    type="search"
-                    class="search_input"
-                    placeholder="Search"
-                    required="required"
-                  />
-                  <button
-                    class="
-                      header_search_button
-                      d-flex
-                      flex-column
-                      align-items-center
-                      justify-content-center
-                    "
-                  >
-                    <i class="fa fa-search" aria-hidden="true"></i>
-                  </button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-    <h1>hi</h1>
-<h1>hi</h1>
-
-
-
-
-
-
-
-      <div class="carousel slide" data-bs-ride="carousel" id="carouselExampleIndicators">
-        <div class="carousel-indicators">
-          <button aria-label="Slide 1" class="active" data-bs-slide-to="0" data-bs-target="#carouselExampleIndicators" type="button"></button> <button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#carouselExampleIndicators" type="button"></button> <button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#carouselExampleIndicators" type="button"></button>  <button aria-label="Slide 4" data-bs-slide-to="3" data-bs-target="#carouselExampleIndicators" type="button"></button>
-        </div>
-        <div class="carousel-inner">
-          <div  class="carousel-item active">
-            <img alt="..." class="d-block w-100" src="home_slider_1.jpg">
-            <div class="carousel-caption">
-              <h1 class="animated bounceInRight" style="animation-delay: 1s ;color:black; font-size: 70px;">Edumoon</h1>
-              <p class="animated bounceInLeft " style="animation-delay: 2s ;color:blue;"><span>One stop solutions to students</span></p>
-              <p class="animated bounceInRight" style="animation-delay: 3s "><a href="#">Learn More</a></p>
-            </div>
-          </div>
-          <div class="carousel-item">
-           
-            <p alt="..." class="d-block w-100" style="background: rgb(7, 0, 122);
-            background: linear-gradient( 210deg, rgba(7, 0, 122, 1) 2%, rgba(8, 8, 134, 1) 35%, rgba(0, 145, 175, 1) 100% );
-        ";></p>
-            <div class="carousel-caption">
-              <h1 class="animated bounceInRight kite" style="animation-delay: 1s ; "> Crack EAMCET in 30 Days</h1>
-              <div class="text-white mt-md-3 animated bounceInLeft" style="animation-delay: 2s;font-size: calc(100% + 1.1vw)">
-                Still in search of a better crash course for EAMCET?
-                EduMoon is providing the 30-days EAMCET crash course at
-                just Rs.1999/- and the course instructors are toppers
-                from AU.
-              </div>
-             <!--<p class="animated bounceInLeft d-none d-md-block" style="animation-delay: 2s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, nulla, tempore. Deserunt excepturi quas vero.</p>-->
-              <p class="animated bounceInRight" style="animation-delay: 3s"><a href="#">Learn More</a></p>
-            </div>
-          </div>
-       
-          <div class="carousel-item">
-            <img alt="..." class="d-block w-100" src="carousel4.jpg">
-            <div class="carousel-caption">
-              <h1 class="animated bounceInRight" style="animation-delay: 1s"></h1>
-              <p class="animated bounceInLeft d-none d-md-block" style="animation-delay: 2s"></p>
-              <p class="animated bounceInRight" style="animation-delay: 3s ;margin-top: 24%;"><a style="background-color:green;" href="#">Register</a></p>
-            </div>
-          </div>
-               
-          <div class="carousel-item">
-            <img alt="..." class="d-block w-100" src="https://i.postimg.cc/c4nL7ZFW/3.jpg">
-            <div class="carousel-caption">
-              <h5 class="animated bounceInRight" style="animation-delay: 1s">Photography</h5>
-              <p class="animated bounceInLeft d-none d-md-block" style="animation-delay: 2s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, nulla, tempore. Deserunt excepturi quas vero.</p>
-              <p class="animated bounceInRight" style="animation-delay: 3s"><a href="#">Learn More</a></p>
-            </div>
-          </div>
-        </div><button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleIndicators" type="button"><span aria-hidden="true" class="carousel-control-prev-icon"></span> <span class="visually-hidden">Previous</span></button> <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExampleIndicators" type="button"><span aria-hidden="true" class="carousel-control-next-icon"></span> <span class="visually-hidden">Next</span></button>
-      </div>
-      
-      <h1 style="text-align: center; color: black;margin:5%" >LATEST EVENTS</h1>
-
-      <div class="container">
-
-       
-        <div class="wrapper"   >
-
-            <ul id="sb-slider" class="sb-slider">
-                <li>
-                    <a href="http://www.flickr.com/photos/strupler/2969141180" target="_blank"><img src="1.jpg" alt="image1"/></a>
-                    <div class="sb-description">
-                        <h3>Creative Lifesaver</h3>
-                    </div>
-                </li>
-                <li>
-                    <a href="http://www.flickr.com/photos/strupler/2968268187" target="_blank"><img src="2.jpg" alt="image2"/></a>
-                    <div class="sb-description">
-                        <h3>Honest Entertainer</h3>
-                    </div>
-                </li>
-                <li>
-                    <a href="http://www.flickr.com/photos/strupler/2968114825" target="_blank"><img src="3.jpg" alt="image1"/></a>
-                    <div class="sb-description">
-                        <h3>Brave Astronaut</h3>
-                    </div>
-                </li>
-                <li>
-                    <a href="http://www.flickr.com/photos/strupler/2968122059" target="_blank"><img src="4.jpg" alt="image1"/></a>
-                    <div class="sb-description">
-                        <h3>Affectionate Decision Maker</h3>
-                    </div>
-                </li>
-                <li>
-                    <a href="http://www.flickr.com/photos/strupler/2969119944" target="_blank"><img src="5.jpg" alt="image1"/></a>
-                    <div class="sb-description">
-                        <h3>Faithful Investor</h3>
-                    </div>
-                </li>
-                <li>
-                    <a href="http://www.flickr.com/photos/strupler/2968126177" target="_blank"><img src="6.jpg" alt="image1"/></a>
-                    <div class="sb-description">
-                        <h3>Groundbreaking Artist</h3>
-                    </div>
-                </li>
-                <li>
-                    <a href="http://www.flickr.com/photos/strupler/2968945158" target="_blank"><img src="7.jpg" alt="image1"/></a>
-                    <div class="sb-description">
-                        <h3>Selfless Philantropist</h3>
-                    </div>
-                </li>
-            </ul>
-
-            <div id="shadow" class="shadow"></div>
-
-            <div id="nav-arrows" class="nav-arrows">
-                <a href="#">Next</a>
-                <a href="#">Previous</a>
-            </div>
-
-        </div><!-- /wrapper -->
-       
-
-    </div>
-
-   <h1  style="text-align: center; color: black;margin:5%;margin-bottom: 20px;">POPULAR ONLINE COURSES</h1>
-<h5>expert team teaches all the popular courses like Web development, app development and EAMCET</h5>
-                
-
- <!-- Topic Cards -->
- <div id="cards_landscape_wrap-2">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                <a href="">
-                    <div class="card-flyer">
-                        <div class="text-box">
-                            <div class="image-box">
-                                <img src="vidyaLakshmi.jpeg" alt="" />
-                            </div>
-                            <div class="text-container">
-                              <h6>Database Management System</h6>
-                                <p style="margin-bottom: 30px;">Palisetty vidyaLakshmi</p>
-                                <b style="float: left;margin-bottom: 10px;"><i style="color: gold; "; class='fas fa-eye'></i>1,903 views</b><b style="width:20px ;margin-bottom: 10px;color:rgb(12, 195, 250); float: right;margin-right: 10px;">Free</b>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                <a href="">
-                    <div class="card-flyer">
-                        <div class="text-box">
-                            <div class="image-box">
-                                <img src="samuelSusan.jpeg" alt="" />
-                            </div>
-                            <div class="text-container">                                    
-                              <h6>
-                                Formal Language & Automata Theory
-                              </h6>
-                              <p style="margin-bottom: 30px;">Samuel Susan</p>
-                              <b style="float: left;margin-bottom: 10px;"><i style="color: gold; "; class='fas fa-eye'></i>1,184 views</b><b style="width:20px ;margin-bottom: 10px;color:rgb(12, 195, 250); float: right;margin-right: 10px;">Free</b>
-                              </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                <a href="">
-                    <div class="card-flyer">
-                        <div class="text-box">
-                            <div class="image-box">
-                                <img src="sohana.jpeg" alt="" />
-                            </div>
-
-                            <div class="text-container">
-                              <h6>
-                                Digital Logic Design
-                              </h6>
-                              <p style="margin-bottom: 43px;margin-top: 20px;">Sohana</p>
-                              <b style="float: left;margin-bottom: 10px;"><i style="color: gold; "; class='fas fa-eye'></i>1,000 views</b><b style="width:20px ;margin-bottom: 10px;color:rgb(12, 195, 250); float: right;margin-right: 10px;">Free</b>
-                              </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                <a href="">
-                    <div class="card-flyer">
-                        <div class="text-box">
-                            <div class="image-box">
-                                <img src="karthik.png" alt="" />
-                            </div>
-                            <div class="text-container">
-                              <h6>
-                                Object Oriented Programming
-                              </h6>
-                              <p style="margin-bottom: 30px;">Karun Karthik</p>
-                              <b style="float: left;margin-bottom: 10px;"><i style="color: gold; "; class='fas fa-eye'></i>1,500 views</b><b style="width:20px ;margin-bottom: 10px;color:rgb(12, 195, 250); float: right;margin-right: 10px;">Free</b>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<button style="    margin-left: 48%; margin-top: 10px;
-display: block;border-radius: 14px;background-color: rgb(0, 47, 255);padding: 10px;color: white;font-weight: 800;
-    margin:auto;">View All Courses</button>
-
-<h1  style="text-align: center; color: black;margin:5%;margin-bottom: 20px;">TESTIMONIALS</h1>
-
-<h5>we value our learners and let's see what they said about us.</h5>
-
-<div class="sai">
-    <div class="container" style=" background: linear-gradient(to bottom, #000428, #004683);
-    animation: background-color 20s;
-    min-height: 62vh; margin-top: 80px;
-    border: 5px solid white;
- 
-    border-radius: 27px;
-    overflow: hidden;">
-        <div class="row">
-            <div class="col-lg-4">
-                <div style="background-color: rgba(0,0,0,0);" class="card">
-                    <div class="face front-face"> <img src="sowmya.jpeg" alt="" class="profile">
-                        <div class="pt-3 text-uppercase name"> Sowmya Korada </div>
-                        <div class="designation">B.tech</div>
-                    </div>
-                    <div class="face back-face"> <span class="fas fa-quote-left"></span>
-                        <div class="testimonial">
-                          It was a great workshop for the behinner's to understand the basics of web development and get to know different technologies used in it. I could explore the concepts further while working on the assignments. The instructors were very humble and patiently cleared all the doubts. Overall it was a good learning experience. Thanks to Edumoon. </div> <span class="fas fa-quote-right"></span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div style="background-color: rgba(0,0,0,0);" class="card">
-                    <div class="face front-face"> <img src="visali1.jpeg" alt="" class="profile">
-                        <div class="pt-3 text-uppercase name"> Pemmaraju Visali</div>
-                        <div class="designation">B.tech</div>
-                    </div>
-                    <div class="face back-face"> <span class="fas fa-quote-left"></span>
-                        <div class="testimonial"> I've taken the 2 day workshop of Web Development from Edumoon! It was very helpful. I've learnt basics about Javascript and MySQL. I've completely understood HTML, CSS. The assignments which were given on day 1,2 helped us to understand how much we've learned in the session. Instructors were very helpful, they've clarified the doubts and responded immediately. Thank you for this wonderful session! </div> <span class="fas fa-quote-right"></span>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-lg-4">
-                <div style="background-color: rgba(0,0,0,0);"class="card">
-                    <div class="face front-face"> <img src="srujan.jpeg" alt="" class="profile">
-                        <div class="pt-3 text-uppercase name">Cheemakurthi Srujan </div>
-                        <div class="designation">B.tech</div>
-                    </div>
-                    <div class="face back-face"> <span class="fas fa-quote-left"></span>
-                        <div class="testimonial">I am glad that i got this opportunity to learn new things and how to add new features. In this sessin everyone was super good and helped each and every student. Their dedication and effort towards this session was completely awesome. Even when we ask small/stupid questions they answered it in sweet and convenient way</div> <span class="fas fa-quote-right"></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-
-
-
-    <h1  style="text-align: center; color: black;margin:5%;margin-bottom: 20px;">LIVE UPDATES</h1>
-    <h5 style="margin-bottom: 50px;">expert team not only teaches but also organises webnars provide internships and many more</h5>
-                
-    
-    
-		<div style="place-content:space-evenly;"  class="row">
-            <div class="ed-course">
-                <div class="col-md-3 col-sm-4 col-xs-12">
-                    <div class="ed-course-in">
-                        <a class="course-overlay" href="about.html">
-                            <img src="1.jpg" alt="">
-                            <span>WEBINARS</span>
-                        </a>
-                    </div>
-                </div>
-                
-                <div class="col-md-3 col-sm-4 col-xs-12">
-                    <div class="ed-course-in">
-                        <a class="course-overlay" href="dashboard.html">
-                            <img src="3.jpg" alt="">
-                            <span>INTERNSHIPS</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-4 col-xs-12">
-                    <div class="ed-course-in">
-                        <a class="course-overlay" href="research.html">
-                            <img src="4.jpg" alt="">
-                            <span>WORKSHOPS</span>
-                        </a>
-                    </div>
-                </div>
-                
-                </div>
-            </div>
-
-
-            
-		<div style="place-content:space-evenly;"  class="row">
-            <div class="ed-course">
-                <div class="col-md-3 col-sm-4 col-xs-12">
-                    <div class="ed-course-in">
-                        <a class="course-overlay" href="about.html">
-                            <img src="1.jpg" alt="">
-                            <span>EDU-TALKS</span>
-                        </a>
-                    </div>
-                </div>
-                
-                <div class="col-md-3 col-sm-4 col-xs-12">
-                    <div class="ed-course-in">
-                        <a class="course-overlay" href="dashboard.html">
-                            <img src="3.jpg" alt="">
-                            <span>CAMPUS DRIVES</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-4 col-xs-12">
-                    <div class="ed-course-in">
-                        <a class="course-overlay" href="research.html">
-                            <img src="4.jpg" alt="">
-                            <span>SEMESTER TIPS</span>
-                        </a>
-                    </div>
-                </div>
-                
-                </div>
-            </div>
-
-
-            <footer class="footer-area">
-                <div class="footer-wave-box">
-                    <div class="footer-wave footer-animation"></div>
-                </div>
-                <div class="main">
-                    <div class="footer">
-                        <div class="single-footer">
-                            <h4>about us</h4>
-                            <p>Lorem ipsum dolor sit amet, di dunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Excepteur sint qui officia deserunt Excepteur.</p>
-                            <div class="footer-social">
-                                <a href=""><i class="bx bxl-facebook"></i></a>
-                                <a href=""><i class="bx bxl-twitter"></i></a>
-                                <a href=""><i class="bx bxl-instagram"></i></a>
-                                <a href=""><i class="bx bxl-linkedin"></i></a>
-                            </div>
-                        </div>
-                        <div class="single-footer">
-                            <h4>main menu</h4>
-                            <ul>
-                                <li><a href=""><i class="fas fa-chevron-right"></i> home</a></li>
-                                <li><a href=""><i class="fas fa-chevron-right"></i> about us</a></li>
-                                <li><a href=""><i class="fas fa-chevron-right"></i> services</a></li>
-                                <li><a href=""><i class="fas fa-chevron-right"></i> gallery</a></li>
-                                <li><a href=""><i class="fas fa-chevron-right"></i> contact us</a></li>
-                            </ul>
-                        </div>
-                        <div class="single-footer">
-                            <h4>quick links</h4>
-                            <ul>
-                                <li><a href=""><i class="fas fa-chevron-right"></i> privacy policy</a></li>
-                                <li><a href=""><i class="fas fa-chevron-right"></i> terms & conditions</a></li>
-                                <li><a href=""><i class="fas fa-chevron-right"></i> disclaimer</a></li>
-                            </ul>
-                        </div>
-                        <div class="single-footer">
-                            <h4>contact us</h4>
-                            <ul>
-                                <li><a href=""><i class="fas fa-map-marker-alt"></i> North Street, Sydney, Australia</a></li>
-                                <li><a href=""><i class="fas fa-mobile-alt"></i> +88 0123 456 789</a></li>
-                                <li><a href=""><i class="far fa-envelope"></i> info@demo.com</a></li>
-                                <li><a href=""><i class="fas fa-globe-europe"></i> www.demo.com</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="copy">
-                        <p>&copy; 2020 all rights reserved</p>
-                    </div>
-                </div>
-            </footer>
-            
-
-            
-  <!--content ends-->
-  <script>
-  let sidebar = document.querySelector(".sidebar");
-  let closeBtn = document.querySelector("#btn");
-  let searchBtn = document.querySelector(".bx-search");
-
-  closeBtn.addEventListener("click", ()=>{
+@media (min-width: 576px)
+{
+.card-columns {
    
-  });
-
-  closeBtn.addEventListener("click", ()=>{
-      if (sidebar.style.display === 'none') {
-        sidebar.classList.add("open");
-        sidebar.style.display = 'block';
-       
-    } else {
+    column-count: 2;
+    
+    column-gap: 1.25rem;
+}}
+</style>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <div class="text-center">
+    <h1>CHENNAI</h1>
+  </div>
+  <div class="container">
+    <div class="card-columns">
+      <div class="card">
+        <a href="#">
+        <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReS90FhaspSyhER076UeEfZy_hv6AGwaJ7TQ&usqp=CAU" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">CAT</h5>
+          <p class="card-text">
+            Common Admission Test (CAT) is the entrance exam for aspiring candidates who desire to make a career in management and business administration i.e. MBA. 
+            This examination is conducted by the Indian Institutes of Management (IIMs) on a rotational basis.
+          </p>
+          <p class="card-text"><small class="text-muted"><i class="fas fa-eye"></i>1000<i class="far fa-user"></i>enroll<i class="fas fa-calendar-alt"></i>Jan 20, 2018</small></p>
+      </div>
+        </a>
+      </div>
+      <div class="card">
+        <a href="#">
+        <img class="card-img-top" src="data:image/png;base64,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" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">NAT</h5>
+          <p class="card-text">National Aptitude Test (NAT) 2021 – a national-level ability profiler exam. 
+            This is an important initiative by the National Testing Agency to help students between the age of 13 to 25 years to acquire knowledge and skills beyond academics.</p>
+          <p class="card-text"><small class="text-muted"><i class="fas fa-eye"></i>1000<i class="far fa-user"></i>enroll<i class="fas fa-calendar-alt"></i>Jan 20, 2018</small></p>
+        </div>
+        </a>
+      </div>
+      <div class="card">
+        <a href="#">
+        <img class="card-img-top" src="data:image/jpeg;base64,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" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">NDA</h5>
+          <p class="card-text">The NDA exam is conducted by UPSC for admission to the Army, Navy and Air Force wings of the NDA. 
+            This exam is a gateway for candidates looking forward to joining Defence Forces including Army, Navy and Air Force.</p>
+          <p class="card-text"><small class="text-muted"><i class="fas fa-eye"></i>1000<i class="far fa-user"></i>enroll<i class="fas fa-calendar-alt"></i>Jan 20, 2018</small></p>
+        </div>
+        </a>
+      </div>
+      <div class="card">
+        <a href="#">
+        <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJup0ktrRkjAkOcflPTLOeYl3uFKwgdJr4jA&usqp=CAU" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">CLAT</h5>
+          <p class="card-text">Common Law Admission Test (CLAT) is a centralized national level entrance test for admissions to twenty two National Law Universities (NLU) in India.
+            The exam is conducted by the Consortium of National Law Universities (NLUs) in offline, pen and paper format.</p>
+          <p class="card-text"><small class="text-muted"><i class="fas fa-eye"></i>1000<i class="far fa-user"></i>enroll<i class="fas fa-calendar-alt"></i>Jan 20, 2018</small></p>
+        </div>
+        </a>
+      </div>
      
-        sidebar.style.display = 'none';
-        
-    }
-  });
-
- 
-
-
-  </script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js">
-</script> 
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js">
-</script> 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js">
-</script>
-
-
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-		<script type="text/javascript" src="jquery.slicebox.js"></script>
-		<script type="text/javascript">
-			$(function() {
-				
-				var Page = (function() {
-
-					var $navArrows = $( '#nav-arrows' ).hide(),
-						$shadow = $( '#shadow' ).hide(),
-						slicebox = $( '#sb-slider' ).slicebox( {
-							onReady : function() {
-
-								$navArrows.show();
-								$shadow.show();
-
-							},
-							orientation : 'r',
-							cuboidsRandom : true,
-							disperseFactor : 30
-						} ),
-						
-						init = function() {
-
-							initEvents();
-							
-						},
-						initEvents = function() {
-
-							// add navigation events
-							$navArrows.children( ':first' ).on( 'click', function() {
-
-								slicebox.next();
-								return false;
-
-							} );
-
-							$navArrows.children( ':last' ).on( 'click', function() {
-								
-								slicebox.previous();
-								return false;
-
-							} );
-
-						};
-
-						return { init : init };
-
-				})();
-
-				Page.init();
-
-			});
-		</script>
-
+     
+    </div>
+  </div>
+</div>
+<!-- partial -->
+  
+</body>
 </html>
